@@ -1,0 +1,125 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #a7f3d0 0%, #10b981 100%);
+  margin: 0;
+  padding: 0;
+  /* Center using flex */
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container {
+  /* Fill vertical space below the navbar */
+  min-height: calc(100vh - 70px); /* Adjust based on navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+form {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(16,185,129,0.15);
+  width: 100%;
+  max-width: 430px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  box-sizing: border-box;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.form-toggle div {
+  padding: 10px 25px;
+  font-weight: 700;
+  border-radius: 25px;
+  background: #f1f8e9;
+  color: #064e3b;
+  transition: background-color 0.3s;
+}
+
+.form-toggle .active {
+  background: #10b981;
+  color: white;
+  box-shadow: 0 0 12px #10b981aa;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #065f46;
+}
+
+input, select {
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 2px solid #a7f3d0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #10b981;
+}
+
+.btn {
+  background: #10b981;
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background: #059669;
+}
+
+p {
+  margin-top: 12px;
+  font-size: 1rem;
+}
+
+a {
+  color: #059669;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 0;
+    min-height: calc(100vh - 60px);
+  }
+  form {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+    margin: 1rem 0;
+    min-width: 0;
+  }
+}

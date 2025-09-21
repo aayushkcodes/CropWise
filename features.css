@@ -1,0 +1,53 @@
+.content {
+  max-width: 900px;
+  margin: 80px auto 40px;
+  padding: 20px;
+  background: #f3fdf7;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(51, 86, 33, 0.12);
+  font-family: 'Poppins', sans-serif;
+  color: #134d38;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #059669;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #10b981;
+  padding-bottom: 0.25rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    margin: 100px 10px 30px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

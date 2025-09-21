@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CropWise - Crop Yield Prediction</title>
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="predict.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🌱 CropWise</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="predict.html" class="active">Predict</a>
+      <a href="chat.html">Chat</a>
+      <a href="index.html">Login</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Crop Yield Prediction</h1>
+    <div id="loadingBar" class="loading-bar hidden">
+      <div class="loading-fill"></div>
+    </div>
+
+    <form id="predictForm">
+      <label for="crop">Crop Type:</label>
+      <select id="crop" required>
+        <option value="">-- Select Crop --</option>
+        <option value="paddy">Paddy</option>
+        <option value="maize">Maize</option>
+        <option value="wheat">Wheat</option>
+        <option value="soybean">Soybean</option>
+        <option value="cotton">Cotton</option>
+        <option value="potato">Potato</option>
+        <option value="sugarcane">Sugarcane</option>
+      </select>
+
+      <label for="soil">Soil pH:</label>
+      <input type="number" id="soil" step="0.1" min="3" max="9" required />
+
+      <label for="rainfall">Rainfall (mm):</label>
+      <input type="number" id="rainfall" required />
+
+      <label for="area">Area (hectares):</label>
+      <input type="number" id="area" step="0.1" required />
+
+      <button type="submit" class="btn">Get Prediction</button>
+    </form>
+
+    <div id="result" class="result-box hidden"></div>
+  </main>
+
+  <script src="predict.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>
