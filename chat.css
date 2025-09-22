@@ -149,3 +149,47 @@ h1 {
     font-size: 0.97rem;
   }
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #10b981;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.4);
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+
+.navbar {
+  background: #10b981;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: #d1fae5;
+}
